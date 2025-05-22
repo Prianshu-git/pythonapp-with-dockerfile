@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>🌟 Name Generator</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #4a4e69;
+        }
+
+        form {
+            margin: 2rem 0;
+        }
+
+        select, button {
+            font-size: 1rem;
+            padding: 0.6rem 1rem;
+            border-radius: 8px;
+            border: none;
+            margin: 0 0.5rem;
+        }
+
+        select {
+            background-color: #fff;
+            color: #333;
+        }
+
+        button {
+            background-color: #9a8c98;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: #c9ada7;
+        }
+
+        .name-list {
+            margin-top: 2rem;
+            display: inline-block;
+            background: white;
+            padding: 1.5rem 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .name {
+            font-size: 1.5rem;
+            margin: 0.5rem 0;
+            color: #22223b;
+        }
+    </style>
+</head>
+<body>
+    <h1>🧙‍♂️ Magical Name Generator</h1>
+    <p>Choose how many enchanting names to generate! ✨</p>
+
+    <form method="POST">
+        <label for="count">🔢 Count:</label>
+        <select name="count" id="count">
+            {% for i in range(1, 21) %}
+                <option value="{{ i }}" {% if i == selected_count %}selected{% endif %}>{{ i }}</option>
+            {% endfor %}
+        </select>
+
+        <button type="submit">🎲 Generate</button>
+    </form>
+
+    {% if names %}
+    <div class="name-list">
+        {% for name in names %}
+            <div class="name">🌟 {{ name }}</div>
+        {% endfor %}
+    </div>
+    {% endif %}
+</body>
+</html>
