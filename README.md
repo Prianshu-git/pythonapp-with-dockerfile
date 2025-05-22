@@ -213,17 +213,20 @@ MIT License — use freely and share widely!
 
 ## 👨‍💻 Author
 
-Crafted with ❤️ by [Your Name](https://github.com/your-username)
+Crafted with ❤️ by [Prianshu-git](https://github.com/Prianshu-git)
 
 ---
 
 ## 📷 Screenshot
 
-![Web UI Screenshot](https://via.placeholder.com/1000x500?text=Name+Generator+App)
+![Screenshot 2025-05-22 at 06-05-35 🌟 Name Generator](https://github.com/user-attachments/assets/be2ec801-b170-46dc-900d-53a619e0e696)
+
 
 ---
 
 ## 🔗 Useful Links
+Start Learning today!
+https://prianshu-404daily.hashnode.dev/
 
 - [Flask Documentation](https://flask.palletsprojects.com/)
 - [Docker Official Docs](https://docs.docker.com/)
